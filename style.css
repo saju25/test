@@ -3,6 +3,7 @@
 body{
 	font-family: 'Poppins', sans-serif;
 	font-size: 22px;
+  color: #333;
 }
 
 /*================== for index css =================*/
@@ -28,7 +29,7 @@ body{
 
 
 .hero-section {
-  margin-top: 214px;
+  padding-top: 100px;
   color: #fff;
 }
 .hero-section span {
@@ -44,21 +45,20 @@ body{
 .pfi-bg{
 	background-image: url(./assets/images/index/Rectangle_23.svg);
 	background-size: cover;
-	background-position: center;
+	background-repeat: no-repeat;
+ background-position: center;
 }
-
+.about-sec{
+  margin-top: 150px;
+}
+.about-w{
+   padding-bottom: 278px;
+}
 .section-main {
   position: relative;
+  z-index: 1;
 }
-.about-pfi-section {
-  height: 600px;
-  display: flex;
-  align-items: center;
-  position: absolute;
-  width: 100%;
-  top: 829px;
-  z-index: -1;
-}
+
 
 
 .about-pfi-section h2 {
@@ -78,4 +78,62 @@ body{
   bottom: -15px;
   left: 0;
   border-radius: 5px;
+}
+
+
+.roadmap-section .section-title h1 {
+  font-size: 42px;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+.roadmap-section .section-title h1:after {
+  position: absolute;
+  left: 16%;
+  content: "";
+  background-color: #9BCA3C;
+  height: 10px;
+  width: 133px;
+  border-radius: 10px;
+  bottom: -5px;
+}
+.roadmap-section .left-side img {
+  width: 167px;
+  height: 147px;
+}
+
+
+.roadmap-section .right-side {
+  margin-bottom: 146px;
+}
+
+.donate-bg {
+  background-image: url(./assets/images/roadmap/Rectangle.svg);
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  height: 1061px;
+  background-size: cover;
+}
+
+
+.donate-section .section-title h1 {
+  font-size: 42px;
+  font-weight: 600;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 60px;
+}
+.donate-section .section-title h1:after {
+  position: absolute;
+  right: 10px;
+  content: "";
+  background-color: #9BCA3C;
+  height: 10px;
+  width: 133px;
+  border-radius: 5px;
+  bottom: -10px;
+}
+.donate-section .section-title {
+  margin-top: 180px;
 }
